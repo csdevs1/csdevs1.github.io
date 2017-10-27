@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One|Poiret+One|Raleway|Sigmar+One|Megrim');
+
+body,html{
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+  font-size:16px;
+  max-height:100vh;
+}
+
+.bg-cover{
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.black{color:#000 !important;}
+
+section{display:inline-block;}
+
+.full-width{width:100%;}
+
+.full-height{min-height:100vh;}
+
+.top-section{
+  position:relative;
+  overflow:hidden;
+}
+
+.nav{padding:10px 50px 10px 50px;}
+
+.navbar-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-list li{display:inline-block;color:#fff;text-shadow:1px 1px 1px #000;font-size:1.2em;padding:10px;}
+.navbar-list li:not(:last-child){margin-right:15px;}
+
+.container{max-width:1140px;margin:auto;}
+.row{display:block;width:100%}
+
+.img-responsive{width:100%;}
+
+.logo{max-width:45px;vertical-align:middle;}
+
+.brand-title{color:#fff;font-size:1.5rem;text-shadow:-1px 2px 5px #000;}
+
+.align-right{float:right;}
+
+/*======================*/
+/*        GRID:         */
+/*======================*/
+
+.col{display:inline-block;}
+.sl-12{width:100%}
+.sl-6{width:49%;}
+
+/*======================*/
+.navbar-list li i {vertical-align:middle;color:#ccc;}
+/*======================*/
+
+.video-bg{
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  -webkit-filter: grayscale(25%) blur(0.03rem);
+  filter: grayscale(25%) blur(0.03rem);
+  z-index:-2;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-bg {
+      width: 100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-bg {
+      left: -5%;
+      width: auto;
+      height: 100%;
+  }
+}
+
+.slogan{text-align:center;}
+.slogan h1{font-family: 'Passion One', cursive;
+font-size:3.5rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:relative;top:25vh;text-transform:uppercase;}
+.slogan h2{font-family: 'Poiret One', cursive;
+font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:relative;top:20vh;}
+
+.arrow{
+  width:100%;
+  position:absolute;
+  margin:auto;
+  bottom:0;
+  text-align:center;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+.arrow i{
+  color:#fff;
+  text-shadow:1px 1px 5px #000;
+  font-size:2.5rem;
+  animation: bounce 1.2s infinite ease-in;
+}
+
+.cover{z-index:-1;background:rgba(0,0,0,0.5);position:absolute;}
+
+/*=============================================================*/
+/*                       #WORK SECTION:                        */
+/*=============================================================*/
+
+#work{
+  background-image:url('../images/bg-work.jpg');
+  background-attachment: fixed;
+}
+
+.top-title h1{margin:0;top:30px !important;position:relative !important;}
