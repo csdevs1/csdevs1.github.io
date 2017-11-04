@@ -61,15 +61,15 @@ section{display:inline-block;}
 /*======================*/
 
 .video-bg{
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  -webkit-filter: grayscale(25%) blur(0.03rem);
-  filter: grayscale(25%) blur(0.03rem);
-  z-index:-2;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    -webkit-filter: grayscale(25%) blur(0.03rem);
+    filter: grayscale(25%) blur(0.03rem);
+    z-index:-2;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -91,6 +91,9 @@ section{display:inline-block;}
 font-size:3.5rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:relative;top:25vh;text-transform:uppercase;}
 .slogan h2{font-family: 'Poiret One', cursive;
 font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:relative;top:20vh;}
+
+.big-title h1{font-size: 7rem; text-align: left;top:8vh;}
+.big-title h2{font-size: 3rem;top:1vh;text-align: left;}
 
 .arrow{
   width:100%;
@@ -119,6 +122,21 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
 }
 
 .cover{z-index:-1;background:rgba(0,0,0,0.5);position:absolute;}
+
+.colored-separator{
+    border: none;
+    height: 1px;
+    width: 400px;
+    margin: 30px 0 25px;
+    background: #ff3535;
+    background: -moz-linear-gradient(left, #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff3535), color-stop(19%,#ffb22d), color-stop(37%,#f7df00), color-stop(56%,#26ff6c), color-stop(76%,#268bff), color-stop(100%,#8b3cff));
+    background: -webkit-linear-gradient(left, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
+    background: -o-linear-gradient(left, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
+    background: -ms-linear-gradient(left, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
+    background: linear-gradient(to right, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#8b3cff',GradientType=1 );
+}
 
 /*=============================================================*/
 /*                       #WORK SECTION:                        */
