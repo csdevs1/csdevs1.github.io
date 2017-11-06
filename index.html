@@ -22,8 +22,8 @@
                 </ul>
             </nav>
             <div class="container">
-                <div class="row slogan big-title">
-                    <h1>Somos un equipo peque&#241;o con grandes ideas</h1>
+                <div class="row slogan big-title" id="main-slogan">
+                    <h1><p id="first-line">Somos un equipo</p><p id="second-line">peque&#241;o con grandes</p> <p id="third-line">ideas</p></h1>
                     <hr class="colored-separator">
                     <h2>Nacemos de las ganas de hacerlo bien</h2>
                 </div>
@@ -43,7 +43,50 @@
         
         <!-- SCRIPTS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/jquery.ScrollMagic.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/SfirstcrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script>
+            $(function(){
+                controller = new ScrollMagic.Controller();
+                // main-slogan Movement
+                new ScrollMagic.Scene({
+                    triggerElement: "#first-line",
+                    triggerHook: 0,
+                    duration: "1000"
+                }).setTween("#first-line", {
+                    x: "-100%",
+                    ease: Linear.easeNone
+                }).addTo(controller);
+                
+                new ScrollMagic.Scene({
+                    triggerElement: "#second-line",
+                    triggerHook: 0,
+                    duration: "1000"
+                }).setTween("#second-line", {
+                    x: "-200%",
+                    ease: Linear.easeNone
+                }).addTo(controller);
+                
+                new ScrollMagic.Scene({
+                    triggerElement: "#third-line",
+                    triggerHook: 0,
+                    duration: "2000"
+                }).setTween("#third-line", {
+                    x: "-300%",
+                    ease: Linear.easeNone
+                }).addTo(controller);
+                
+                new ScrollMagic.Scene({
+                    triggerElement: "#main-slogan",
+                    triggerHook: 0,
+                    duration: "2000"
+                }).setTween("#main-slogan h2", .800,{
+                    opacity: 0 
+                }).addTo(controller);
+            });
+        </script>
     </body>
 </html>

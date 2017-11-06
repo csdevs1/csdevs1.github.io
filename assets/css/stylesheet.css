@@ -109,7 +109,7 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     }
     50% {
         transform: translateY(-15%);
-    }
+    }}
     100% {
         transform: translateY(-50%);
     }
@@ -137,6 +137,8 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     background: linear-gradient(to right, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#8b3cff',GradientType=1 );
 }
+
+#main-slogan p{margin: 0;}
 
 /*=============================================================*/
 /*                       #WORK SECTION:                        */
