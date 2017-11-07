@@ -145,8 +145,9 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
 /*=============================================================*/
 
 #work{
-    background-image:url('../images/bg-work.jpg');
+    background-image:url('../images/bg-work.jpeg');
     background-attachment: fixed;
+    background-position: center;
 }
 
 .title-work h1{
