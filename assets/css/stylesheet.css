@@ -34,7 +34,7 @@ section{display:inline-block;}
   margin: 0;
   padding: 0;
 }
-.navbar-list li{display:inline-block;color:#fff;text-shadow:1px 1px 1px #000;font-size:1.2em;padding:10px;}
+.navbar-list li{display:inline-block;color:#fff;text-shadow:1px 1px 1px #000;font-size:1.4em;padding:10px;transition: all 0.5s;}
 .navbar-list li:not(:last-child){margin-right:15px;}
 
 .container{max-width:1140px;margin:auto;}
@@ -92,8 +92,8 @@ font-size:3.5rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;positio
 .slogan h2{font-family: 'Poiret One', cursive;
 font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:relative;top:20vh;}
 
-.big-title h1{font-size: 7rem; text-align: left;top:8vh;}
-.big-title h2{font-size: 3rem;top:1vh;text-align: left;}
+.big-title h1{font-size: 7rem; text-align: left;top:8vh;transition: all 0.5s;}
+.big-title h2{font-size: 3rem;top:1vh;text-align: left;transition: all 0.5s;}
 
 .arrow{
   width:100%;
@@ -162,3 +162,36 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     text-shadow: 1px 1px 1px #000;
     text-transform: uppercase;
 }
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1400px) {
+        /*SLOGAN*/
+        .big-title h1{font-size: 5rem;transition: all 0.5s;}
+        .big-title h2{font-size: 2.5rem;transition: all 0.5s;}
+    }
+
+    @media only screen and (max-width : 1200px) {
+        
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
