@@ -163,6 +163,81 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     text-transform: uppercase;
 }
 
+.float-right{float: right;}
+
+.web{position: relative;text-align: center;top:50px;}
+.web p:first-child{font-size:2.5rem;color:#eee;text-shadow: 1px 1px 1px #000; margin-bottom: 20px;}
+
+.button {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    display: block;
+    line-height:1.1;
+    padding-top: 15px;
+}
+svg {
+    top: 0;
+    left: 0;
+    border-radius:25px;
+    position: absolute;
+    left: 125px;
+    z-index:1;
+}
+
+path {
+    stroke-width: 2;
+    stroke: rgba(255,255,255,0.8);
+    fill: none;
+    stroke-dasharray: 460;
+    -webkit-transition: -webkit-transform 1s linear;
+    -moz-transition: -moz-transform 1s linear;
+    transition: transform 1s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+svg:hover path {
+    animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite; 
+    -webkit-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite;
+    -moz-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;}
+
+@-webkit-keyframes dash{
+    to {
+      fill: transparent;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dashoffset: 600;
+      stroke-dasharray: 600 0;
+      }
+  }
+@keyframes dash{
+    to {
+      fill: transparent;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dashoffset: 600;
+      stroke-dasharray: 600 0;
+      }
+  }
+@-moz-keyframes dash{
+    to {
+      fill: transparent;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dashoffset: 600;
+      stroke-dasharray: 600 0;
+      }
+  }
+
 /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
