@@ -177,10 +177,11 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     width: 100%;
     top: 0;
     left: 0;
-    filter: grayscale(1) brightness(1);
+    filter: grayscale(30%) contrast(95%);
     transition: all 0.5s;
 }.web:hover img{
-    filter: grayscale(0) brightness(1);
+    width: 103%;
+    filter: grayscale(0%) contrast(110%);
     transition: all 0.5s;
 }
 
