@@ -167,7 +167,8 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     top: 100px;
     padding: 80px;
     overflow: hidden;
-}
+    transition: all 0.5s;
+}.web:hover{box-shadow: 1px 1px 10px #000;transition: all 0.5s;}
 .web span{position: absolute;top:90px;left: 150px;font-size: 2rem;color: #fff;}
 .web span:hover{cursor: pointer;}
 
