@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Passion+One|Poiret+One|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Passion+One|Poiret+One|Raleway|Anton|Amatic+SC');
 
 body,html{
   margin:0;
@@ -163,6 +163,14 @@ font-size:2rem;font-weight:500;color:#fff;text-shadow:1px 1px 1px #000;position:
     text-transform: uppercase;
 }
 
+.quote{position: relative;top: 20vh;}
+.quote blockquote::first-line{text-align: center;font-size: 4rem;font-weight: 900;font-family: 'Anton', sans-serif;text-transform: uppercase;text-shadow: 1px 1px 2px #000;color: #fff;
+}
+.quote blockquote::before,.quote blockquote::after{
+    content: '"';
+}
+.quote blockquote{text-align: center;font-size: 4rem;color: #000;font-family: 'Amatic SC', cursive;}
+.quote p{text-align: center;font-size: 2rem;font-family: 'Poiret One', cursive;}
 /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
