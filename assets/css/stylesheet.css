@@ -60,6 +60,8 @@ section{display:inline-block;}
 .navbar-list li{display:inline-block;color:#fff;text-shadow:1px 1px 1px #000;font-size:1.4em;padding:10px;transition: all 0.5s;}
 .navbar-list li:not(:last-child){margin-right:15px;}
 
+.navbar-list a{color: #fff;}
+
 .container{max-width:1140px;margin:auto;}
 
 .row{display:block;width:100%}
@@ -2329,6 +2331,7 @@ body.is-scroll {
 			.box {
 				position: relative;
 			}
+    }
 
 
 /*==========  Non-Mobile First Method  ==========*/
@@ -2346,7 +2349,19 @@ body.is-scroll {
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-
+        .top-section{
+            background-image: url('https://pixabay.com/get/e837b90f2df7063ed1584d05fb0938c9bd22ffd41cb0134296f0c87ca4/cup-of-coffee-1280537_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat:no-repeat;
+        }
+        .navbar-list a{font-size: 1.2rem;}
+        
+        .video-bg{display: none !important;}
+        .slogan h1{font-size: 3.5rem;}
+        .slogan{padding-left: 50px;}
+        .slogan h2{font-size: 1.53rem;padding: 0px !important;margin: 0px !important;}
     }
 
     /* Small Devices, Tablets */
